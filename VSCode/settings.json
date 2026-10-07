@@ -1,0 +1,132 @@
+{
+  // ─────────────────────────────────────────────
+  // Fonts
+  // ─────────────────────────────────────────────
+
+  "editor.fontFamily": "'Iosveka_Charon', 'Source_Code_Pro', 'Cascadia_Code', 'JetBrains_Mono', 'Google Sans Code', monospace",
+  "editor.fontSize": 17,
+  "editor.fontLigatures": true,
+
+  "terminal.integrated.fontFamily": "'Iosveka_Charon', 'Source_Code_Pro', 'Cascadia_Code', 'JetBrains_Mono', 'Google Sans Code', monospace",
+
+  // VS Code does not provide a native setting to change
+  // the font family of the entire UI.
+
+
+  // ─────────────────────────────────────────────
+  // Theme
+  // ─────────────────────────────────────────────
+
+  "workbench.colorTheme": "My_Claude_IDE_Theme",
+  "workbench.iconTheme": "my-claude-ide-theme-icons",
+
+  "editor.tokenColorCustomizations": {
+    "comments": {
+      "fontStyle": "italic"
+    },
+    "textMateRules": [
+      {
+        "scope": [
+          "comment",
+          "comment.block.documentation",
+          "comment.line.documentation"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
+
+
+  // ─────────────────────────────────────────────
+  // Explorer / Project panel
+  // ─────────────────────────────────────────────
+
+  "workbench.sideBar.location": "right",
+
+  // Equivalent to Zed auto_fold_dirs: false
+  "explorer.compactFolders": false,
+
+  // Disable sticky scrolling inside trees such as Explorer.
+  "workbench.tree.enableStickyScroll": false,
+
+  // VS Code remembers the sidebar width after resizing it.
+  // There is no official setting like:
+  // project_panel.default_width: 350
+
+
+  // ─────────────────────────────────────────────
+  // Editor scrolling
+  // ─────────────────────────────────────────────
+
+  "editor.scrollbar.vertical": "hidden",
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.stickyScroll.enabled": false,
+
+  // Optional: also visually hide workbench scrollbar handles.
+  "workbench.colorCustomizations": {
+    "scrollbarSlider.background": "#00000000",
+    "scrollbarSlider.hoverBackground": "#00000000",
+    "scrollbarSlider.activeBackground": "#00000000"
+  },
+
+
+  // ─────────────────────────────────────────────
+  // AI / Predictions
+  // ─────────────────────────────────────────────
+
+  "chat.disableAIFeatures": true,
+
+  "editor.inlineSuggest.enabled": false,
+  "editor.suggest.preview": false,
+
+
+  // ─────────────────────────────────────────────
+  // Editor behavior
+  // ─────────────────────────────────────────────
+
+  "editor.cursorStyle": "line",
+
+  // Closest VS Code equivalent to disabling
+  // signature help after edits.
+  "editor.parameterHints.enabled": false,
+
+  "editor.lineNumbers": "on",
+
+
+  // ─────────────────────────────────────────────
+  // Autosave
+  // ─────────────────────────────────────────────
+
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1,
+
+
+  // ─────────────────────────────────────────────
+  // TypeScript / JavaScript
+  // ─────────────────────────────────────────────
+
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+
+
+  // ─────────────────────────────────────────────
+  // Title bar / Chrome
+  // ─────────────────────────────────────────────
+
+  // Removes the Command Center/project search from the title bar.
+  "window.commandCenter": false,
+
+  // Removes VS Code's layout controls from the title bar.
+  "workbench.layoutControl.enabled": false,
+
+  // Hide editor toolbar actions such as split/more actions.
+  "workbench.editor.editorActionsLocation": "hidden",
+
+  // Equivalent to Zed's hidden status bar.
+  "workbench.statusBar.visible": false,
+
+  // Don't show Welcome/Get Started when opening VS Code.
+  "workbench.startupEditor": "none"
+}
